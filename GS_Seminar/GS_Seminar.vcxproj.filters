@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="seminar6">
+      <UniqueIdentifier>{79b8c3ad-30e4-40b2-a334-c72e78299129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="seminar6\data">
+      <UniqueIdentifier>{0ec354c2-bc07-47f9-a84f-9cb6624c625c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="seminar6\flatbuffers">
+      <UniqueIdentifier>{064cfc47-34c7-43a7-ab50-a599f137336f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="seminar6\Network">
+      <UniqueIdentifier>{e9b8114a-9c9b-4e83-970e-655e4576a8a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="seminar6\Socket">
+      <UniqueIdentifier>{c7a07f2b-7327-4026-a517-a780aa9125b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="seminar6\main.cpp">
+      <Filter>seminar6</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar6\Network\NetworkManager.cpp">
+      <Filter>seminar6\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar6\Network\NetworkManagerClient.cpp">
+      <Filter>seminar6\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar6\Network\NetworkManagerLobbyServer.cpp">
+      <Filter>seminar6\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar6\Network\NetworkManagerRoomServer.cpp">
+      <Filter>seminar6\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar6\Network\PacketFactory.cpp">
+      <Filter>seminar6\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar6\Socket\SocketAddress.cpp">
+      <Filter>seminar6\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar6\Socket\SocketUtil.cpp">
+      <Filter>seminar6\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar6\Socket\TCPSocket.cpp">
+      <Filter>seminar6\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="seminar6\Socket\UDPSocket.cpp">
+      <Filter>seminar6\Socket</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="seminar6\flatbuffers\GamePacket.hpp">
+      <Filter>seminar6\flatbuffers</Filter>
+    </ClInclude>
+    <ClInclude Include="seminar6\Network\NetworkManager.h">
+      <Filter>seminar6\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="seminar6\Network\NetworkManagerClient.h">
+      <Filter>seminar6\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="seminar6\Network\NetworkManagerLobbyServer.h">
+      <Filter>seminar6\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="seminar6\Network\NetworkManagerRoomServer.h">
+      <Filter>seminar6\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="seminar6\Network\PacketFactory.h">
+      <Filter>seminar6\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="seminar6\Socket\SocketAddress.h">
+      <Filter>seminar6\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="seminar6\Socket\SocketUtil.h">
+      <Filter>seminar6\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="seminar6\Socket\TCPSocket.h">
+      <Filter>seminar6\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="seminar6\Socket\UDPSocket.h">
+      <Filter>seminar6\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="seminar6\Network\Process.h">
+      <Filter>seminar6\Network</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="seminar6\flatbuffers\resources\AppointedData.fbs">
+      <Filter>seminar6\data</Filter>
+    </None>
+    <None Include="seminar6\flatbuffers\resources\DisconnectedData.fbs">
+      <Filter>seminar6\data</Filter>
+    </None>
+    <None Include="seminar6\flatbuffers\resources\IntroData.fbs">
+      <Filter>seminar6\data</Filter>
+    </None>
+    <None Include="seminar6\flatbuffers\resources\JoinedData.fbs">
+      <Filter>seminar6\data</Filter>
+    </None>
+    <None Include="seminar6\flatbuffers\resources\MessageData.fbs">
+      <Filter>seminar6\data</Filter>
+    </None>
+    <None Include="seminar6\flatbuffers\resources\UserData.fbs">
+      <Filter>seminar6\data</Filter>
+    </None>
+    <None Include="seminar6\flatbuffers\resources\DestroyRoomData.fbs">
+      <Filter>seminar6\data</Filter>
+    </None>
+    <None Include="seminar6\flatbuffers\resources\ForwardUserData.fbs">
+      <Filter>seminar6\data</Filter>
+    </None>
+    <None Include="seminar6\flatbuffers\resources\RoomData.fbs">
+      <Filter>seminar6\data</Filter>
+    </None>
+    <None Include="seminar6\flatbuffers\resources\RoomsData.fbs">
+      <Filter>seminar6\data</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+namespace Data;
+
+table AppointedData 
+{
+	appointedID:int;
+	changed:bool;
+}
+
+root_type AppointedData;

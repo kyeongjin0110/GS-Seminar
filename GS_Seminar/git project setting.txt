@@ -1,0 +1,11 @@
+1. git을 다운받는다.
+2. git설치, 설치 시 git bash를 체크한다.
+3. git bash 실행
+4. 프로젝트를 만들 디렉토리로 이동, 관리자 권한이 있는 디렉토리는 피합니다.
+5. 프로젝트 공유를 위해 
+	git 명령어 "git clone https://github.com/insooneelife/GS_Seminar.git"  실행
+	
+6. 브랜치를 가져오기 위해
+	git 명령어 "git checkout _2_Socket" 실행
+
+7. 과제 수행(과제.txt 참고)

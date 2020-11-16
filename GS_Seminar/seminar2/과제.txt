@@ -1,0 +1,12 @@
+UDPServer 실행시키고,
+UDPClient 실행시키기
+
+1. cmd창을 킨다.
+2. 현재 프로젝트의 .exe 파일이 있는 디렉토리로 이동한다.
+	ex) D:\TechnicBank\game\Seminar 2016-09-01\client\GC_Seminar\Debug
+
+3. GS_Seminar.exe를 서버로 한번 실행시킨다.
+	ex) GS_Seminar.exe UDPServer
+
+4. 위 과정을 다시 거친 후 GS_Seminar.exe를 클라이언트로 한번 실행시킨다.
+	ex) GS_Seminar.exe UDPClient

@@ -1,0 +1,11 @@
+﻿  main.cpp
+  SocketAddress.cpp
+seminar3\Socket\SocketAddress.cpp(59): error C2664: 'PCWSTR InetNtopW(INT,PVOID,PWSTR,size_t)': cannot convert argument 3 from 'char [128]' to 'PWSTR'
+  seminar3\Socket\SocketAddress.cpp(59): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  SocketUtil.cpp
+seminar3\Socket\SocketUtil.cpp(70): error C2664: 'void OutputDebugStringW(LPCWSTR)': cannot convert argument 1 from 'char [4096]' to 'LPCWSTR'
+  seminar3\Socket\SocketUtil.cpp(70): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+seminar3\Socket\SocketUtil.cpp(71): error C2664: 'void OutputDebugStringW(LPCWSTR)': cannot convert argument 1 from 'const char [2]' to 'LPCWSTR'
+  seminar3\Socket\SocketUtil.cpp(71): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  TCPSocket.cpp
+  UDPSocket.cpp

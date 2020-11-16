@@ -1,0 +1,22 @@
+// Example IDL file for our monster's schema.
+
+namespace MyGame;
+
+
+table Monster 
+{
+  x:float;
+  y:float;
+  z:float;
+  mana:short = 150;
+  hp:short = 100;
+  name:string;
+  weapons:[Weapon];
+}
+
+table Weapon {
+  name:string;
+  damage:short;
+}
+
+root_type Monster;

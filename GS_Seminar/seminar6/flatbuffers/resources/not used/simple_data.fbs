@@ -1,0 +1,12 @@
+// Example IDL file for our monster's schema.
+
+namespace MyGame;
+
+table pos 
+{
+  x:float;
+  y:float;
+  z:float;
+}
+
+root_type pos;

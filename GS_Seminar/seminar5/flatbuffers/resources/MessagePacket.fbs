@@ -1,0 +1,9 @@
+namespace Packets;
+
+table MessagePacket 
+{
+  name:string;
+  message:string;
+}
+
+root_type MessagePacket;

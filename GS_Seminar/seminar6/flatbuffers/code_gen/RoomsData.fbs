@@ -1,0 +1,10 @@
+include "RoomData.fbs";
+
+namespace Data;
+
+table RoomsData 
+{
+	rooms:[RoomData];
+}
+
+root_type RoomsData;

@@ -1,0 +1,12 @@
+include "UserData.fbs";
+include "AppointedData.fbs";
+
+namespace Data;
+
+table IntroData 
+{
+	user:UserData;
+	appointed:AppointedData;
+}
+
+root_type IntroData;

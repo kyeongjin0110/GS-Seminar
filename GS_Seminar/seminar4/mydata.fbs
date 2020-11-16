@@ -1,0 +1,8 @@
+namespace mydata;
+table pos
+{
+ x:float;
+ y:float;
+ z:float;
+}
+root_type pos;

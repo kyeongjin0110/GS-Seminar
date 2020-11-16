@@ -1,0 +1,131 @@
+
+
+Data
+
+UserData
+	id : int
+	name : string
+	
+AppointedData
+	appointedID : int
+	change : bool
+	
+DisconnectedData
+	disconnectedID : int
+	appoint : AppointedData
+	
+MessageData
+	user : UserData
+	msg : string
+
+IntroData
+	user : UserData
+	appoint : AppointedData
+
+JoinedData
+	users:[UserData];
+	appoint : AppointedData
+
+
+Room Server (Waiting Room)										Client (Waiting Room)
+Handling Packets												Handling Packets
+
+Scenario 1. (Join Protocol)
+
+Hello Packet					<-----------------------					
+								 client가 방에 입장 시							
+	UserData (입장한 user 정보)											 
+								
+	clients map에 저장 후								
+								--------- 0..n -------->		Intro Packet
+								 방에 있던 client 에게									
+																	UserData (입장한 user 정보),
+																	AppointedData (방장 변경 정보)
+																
+																
+								----------------------->		Joined Packet
+								 방에 입장한 client 에게								
+																	UserData[] (이미 입장한 모든 user 정보),
+																	AppointedData (방장 변경 정보)
+																
+																
+								----------------------->		Full Packet	
+								 방이 가득찬 경우 								
+																	x
+															
+															
+Scenario 2.	(Message Protocol)														
+				
+Message	Packet					<-----------------------					
+								 client가 msg 입력 시							
+	MessageData (user 정보, msg 정보)											 
+																
+								--------- 0..n -------->		Message Packet
+								 방의 모든 client 에게									
+																	MessageData (user 정보, msg 정보)			
+																
+																	화면에 출력
+Scenario 3.	(Disconnection Protocol)															
+		
+Disconnected					<-----------------------					
+								 client의 연결이 끊겼을 때							
+	x		
+	
+	clients map에서 제거,
+	필요 시 방장 변경 후
+								--------- 0..n -------->		NotifyDisconnected
+								 방의 모든 client 에게									
+																	DisconnectedData (끊긴 id, 방장 변경 정보)
+
+
+Scenario 4. (Starting Protocol)
+
+RequestStart					<-----------------------		(시작 버튼을 누름)														
+																
+	x														
+	
+	Starting으로 상태 전이														
+								--------- 0..n -------->		EnterStarting
+								 방의 모든 client 에게									
+																	WorldData
+																	
+																	World 초기화 후,
+																	Starting으로 상태 전이	후,
+															
+Ready Packet					<-----------------------									
+								 Server에 Ready를 알림
+	x															
+																	
+	Playing으로 상태 전이					
+								--------- 0..n -------->		EnterPlaying					
+															
+																	x
+																
+																Playing으로
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															
+															

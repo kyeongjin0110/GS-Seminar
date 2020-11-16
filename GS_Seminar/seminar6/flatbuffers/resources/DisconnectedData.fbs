@@ -1,0 +1,10 @@
+include "AppointedData.fbs";
+namespace Data;
+
+table DisconnectedData 
+{
+	appointed:AppointedData;
+	disconnectedID:int;
+}
+
+root_type DisconnectedData;

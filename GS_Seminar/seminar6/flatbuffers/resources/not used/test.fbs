@@ -1,0 +1,8 @@
+namespace test;
+ table position
+ {
+	 x:float;
+	 y:float;
+	 z:float;
+ }
+ root_type position;

@@ -1,0 +1,15 @@
+include "RoomData.fbs";
+include "ForwardUserData.fbs";
+
+namespace Data;
+
+table DestroyRoomData 
+{
+	room : RoomData;
+	users : [ForwardUserData];
+}
+
+root_type DestroyRoomData;
+
+
+

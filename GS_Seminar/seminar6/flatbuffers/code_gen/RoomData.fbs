@@ -1,0 +1,9 @@
+namespace Data;
+
+table RoomData 
+{
+	number:int;
+	address:string;
+}
+
+root_type RoomData;

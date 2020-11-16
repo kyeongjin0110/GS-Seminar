@@ -1,0 +1,13 @@
+include "UserData.fbs";
+include "AppointedData.fbs";
+
+namespace Data;
+
+table JoinedData 
+{
+	user:[UserData];
+	joined:int;
+	appointed:AppointedData;
+}
+
+root_type JoinedData;

@@ -1,0 +1,8 @@
+namespace Packets;
+
+table LoginPacket 
+{
+  name:string;
+}
+
+root_type LoginPacket;

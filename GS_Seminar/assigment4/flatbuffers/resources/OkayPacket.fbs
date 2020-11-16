@@ -1,0 +1,8 @@
+namespace Packets;
+
+table OkayPacket 
+{
+  id:int;
+}
+
+root_type OkayPacket;

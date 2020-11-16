@@ -1,0 +1,11 @@
+include "UserData.fbs";
+
+namespace Data;
+
+table ForwardUserData 
+{
+	user : UserData;
+	address : string;
+}
+
+root_type ForwardUserData;

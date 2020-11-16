@@ -1,0 +1,8 @@
+namespace MyGame;
+table pos
+{
+ x:float;
+ y:float;
+ z:float;
+}
+root_type pos;

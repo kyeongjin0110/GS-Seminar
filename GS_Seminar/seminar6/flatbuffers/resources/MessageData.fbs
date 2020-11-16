@@ -1,0 +1,10 @@
+include "UserData.fbs";
+namespace Data;
+
+table MessageData 
+{
+	user:UserData;
+	msg:string;
+}
+
+root_type MessageData;
